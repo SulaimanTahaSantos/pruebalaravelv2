@@ -49,4 +49,10 @@ class RegisterController extends Controller
             'token' => $token
         ], 201);
     }
+
+    function todosLosUsuarios()
+    {
+        $usuarios = User::all();
+        return response()->json($usuarios);
+    }
 }

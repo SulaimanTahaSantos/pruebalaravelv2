@@ -8,3 +8,4 @@ use Illuminate\Support\Facades\Route;
 // })->middleware('auth:sanctum');
 
 Route::post('/register', [RegisterController::class, 'register']);
+Route::get('/usuarios', [RegisterController::class, 'todosLosUsuarios']);
